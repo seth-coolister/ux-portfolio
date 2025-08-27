@@ -5,43 +5,136 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: "Merriweather", serif;
-}
-
-header, footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 4rem;
-  background-color: aquamarine;
-}
-
-main{
-  padding: 2rem 4rem;
-  flex: 1;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-}
-
-a:hover{
-  background-color: #000;
-  color: #fff;
-}
-
-h1{
-  font-size: 2rem;
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
   margin: 0;
 }
 
-#active{
-  text-decoration: solid underline;
+p{
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  color: #000;
+  text-decoration: none;
+}
+
+a img{
+  display: block;
+}
+
+header{
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #00000034;
+  position: absolute;
+  width: calc(100% - 80px);
+}
+
+#workmark {
+  display: flex;
+  align-items: center;
+}
+
+#workmark .logo {
+  margin-right: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a:hover{
+  font-weight: 600;
+}
+
+#active {
+  font-weight: 600;
+}
+
+main{
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+#card-container{
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.card{
+  flex: 1;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  padding: 40px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.card:nth-child(1) {
+  background-color: #1C1C1C;
+  color: #FFD89A; 
+}
+
+.card:nth-child(2) {
+  background-color: #A8E6C4;
+  color: #333;
+  font-weight: 500; 
+}
+
+.card:nth-child(2) img {
+  transform: rotate(-5deg);
+}
+
+.card:nth-child(3) {
+  background-color: #8E4A49;
+  color: #ddd;
+}
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px) translateX(-10px);
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.card:nth-child(1), .card:nth-child(3):hover{
+  filter: brightness(1.1);
+}
+
+h1{
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-top: 1px solid #00000034;
 }
