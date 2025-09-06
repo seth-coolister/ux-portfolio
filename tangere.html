@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=IM+Fell+English:ital@0;1&family=Jacques+Francois&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -18,20 +18,158 @@
     
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" id="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="assets/resume.pdf">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/seth-callister/"><img src="assets/linkedin.svg" alt="LinkedIn"></a></li>
       </ul>
+      <img src="assets/hamburg.svg" alt="Menu" id="menu">
     </nav>
   </header>
 
-  <main>
-    <p>Work in Progress</p>
+  <main id="tangere-main">
+    <div id="tangere-wrapper">
+
+    <div id="tangere-banner">
+      <img src="assets/tangere-gold.svg" alt="Tangere Logo">Tangere
+    </div>
+
+    <div class="tangere-content">
+      <p><strong>Role:</strong> UX/UI Designer<br>
+      <strong>Project Duration:</strong> 2 Months<br>
+      <strong>Tools:</strong> Figma, Microsoft Teams<br>
+      <strong>Platform:</strong> iOS & Android</p>
+    </div>
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/gold.svg" alt="Gold">
+        <h2>Overview</h2>
+      </div>
+      <p>Tangere is a mobile app that allows users to buy, sell, and transfer gold, silver, and Goldbacks. It combines the convenience of peer-to-peer transactions with the security and stability of real assets.</p>
+    </div>
+
+    <div class="tangere-big">
+      <h3>Welcome to Tangere</h3>
+      <p>Securely unlock the value of Gold & Silver with our trusted payment app.</p>
+      <p>Inflation protected instant transactions with real gold & silver.</p>
+    </div>
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/gold.svg" alt="Gold">
+        <h2>The Problem</h2>
+      </div>
+      <p>Precious metal trading platforms are:</p>
+      <ul>
+        <li>Dominated by clunky, outdated websites</li>
+        <li>Not optimized for mobile experiences</li>
+        <li>Inaccessible to newcomers and small-scale traders</li>
+        <li>Lacking peer-to-peer functionality</li>
+      </ul>
+      <p>Users were frustrated by how complex and exclusive metal ownership felt. They needed something modern, friendly, and transparent.</p>
+    </div>
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/check.svg" alt="Check">
+        <h2>The Goal</h2>
+      </div>
+      <ul>
+        <li>Create a mobile-first platform for buying, selling, and transferring metals</li>
+        <li>Make P2P metal transfers as easy as Venmo</li>
+        <li>Allow fractional ownership and trades</li>
+        <li>Design a clean, scalable component system to support rapid dev handoff</li>
+      </ul>
+    </div>
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/glass.svg" alt="Glass">
+        <h2>My Role</h2>
+      </div>
+      <p>I joined the team after development had already begun. The original Figma files—created by five full-stack developers—needed refinement. My task was to:</p>
+      <ul>
+        <li>Refine and standardize UI components</li>
+        <li>Rebuild and organize components using atomic design principles</li>
+        <li>Ensure consistency across screens and flows</li>
+        <li>Improve visual polish and scalability</li>
+      </ul>
+    </div>
+
+    <img src="assets/tangere-dark.jpg" alt="Tangere Dark Theme">
+    <img src="assets/tangere-light.jpg" alt="Tangere Light Theme">
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/right-chevron.svg" alt="Right Chevron">
+        <h2>Design Process</h2>
+      </div>
+      <b>Audit & Triage</b>
+      <p>I began by reviewing the existing designs:</p>
+      <ul>
+        <li>Redundant components</li>
+        <li>Poor use of variables and text styles</li>
+        <li>Inconsistent spacing and iconography</li>
+      </ul>
+      <b>Rebuilding from the Ground Up</b>
+      <p>Using atomic design methodology, I restructured the system into:</p>
+      <ul>
+        <li>Atoms (buttons, icons, inputs)</li>
+        <li>Molecules (form fields, cards, rows)</li>
+        <li>Organisms (wallets, transfer modules, charts)</li>
+      </ul>
+      <p>This allowed us to:</p>
+      <ul>
+        <li>Easily theme and update UI components globally</li>
+        <li>Maintain consistency across hundreds of screens</li>
+        <li>Scale designs efficiently with fewer errors</li>
+      </ul>
+    </div>
+
+    <img src="assets/tangere-first.jpg" alt="Tangere Screens">
+    <img src="assets/tangere-second.jpg" alt="Tangere Screens">
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/circle-down.svg" alt="Circle Down">
+        <h2>Final Deliverables</h2>
+      </div>
+      <ul>
+        <li>Fully refactored Figma library</li>
+        <li>Responsive UI for iOS and Android</li>
+        <li>Design system guide and documentation</li>
+      </ul>
+    </div>
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/message.svg" alt="Message">
+        <h2>Outcome</h2>
+      </div>
+      <ul>
+        <li>Investors praised the clean, premium design</li>
+        <li>Stakeholders felt prepared to move forward with the design, knowing it could be easily adapted and developed</li>
+      </ul>
+    </div>
+
+    <div class="tangere-content">
+      <div class="tangere-content-head">
+        <img src="assets/vault.svg" alt="Vault">
+        <h2>Lessons Learned</h2>
+      </div>
+      <ul>
+        <li>Atomic design saves time and headaches</li>
+        <li>Documentation is an important design tool to keep developers and designers on the same page</li>
+        <li>Clear communication and iterative collaboration are key for designing</li>
+    </div>
+
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Seth Callister</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
