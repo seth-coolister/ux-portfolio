@@ -206,6 +206,7 @@ footer {
   color: #888;
 }
 
+/* EJW */
 #ejw-main{
   background-color: #1e1e1e;
 }
@@ -215,4 +216,48 @@ footer {
   gap: 40px;
   max-width: 75%;
   margin: 40px auto;
+}
+
+/* FillUs */
+#fillus-main{
+  background-color: #FAFAF8;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+#fillus-main h1,h2,h3,h4,h5,h6{
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+#fillus-main h1{
+  font-size: 32px;
+}
+#fillus-main ul{
+  padding: 0 20px;
+}
+
+#fillus-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#fillus-wrapper section{
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  background-color: #E0E5EC;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 600px;
+}
+
+#fillus-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+#fillus-header img{
+  transform: rotate(-5deg);
 }

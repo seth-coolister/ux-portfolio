@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seth Callister, UX</title>
+  <title>Seth Callister, UX Designer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=IM+Fell+English:ital@0;1&family=Jacques+Francois&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=IM+Fell+English:ital@0;1&family=Jacques+Francois&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -18,7 +18,7 @@
     
     <nav>
       <ul>
-        <li><a href="index.html" id="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="assets/resume.pdf">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/seth-callister/"><img src="assets/linkedin.svg" alt="LinkedIn"></a></li>
@@ -27,8 +27,96 @@
     </nav>
   </header>
 
-  <main>
-    <p>Work in Progress</p>
+  <main id="fillus-main">
+    <div id="fillus-wrapper">
+
+      <div id="fillus-header">
+        <img src="assets/fillus.svg" alt="FillUs Logo" id="fillus-logo">
+        <h1>Case Study: Fillus – Smarter Prescription Refill Syncing</h1>
+      </div>
+
+      <section>
+        <h2>Overview</h2>
+        <p>Fillus is a mobile app that helps patients streamline prescription refills by syncing medication schedules and pharmacy visits.</p>
+        <p>Many people struggle with fragmented refill dates, multiple prescriptions, and remembering to request refills on time.</p>
+        <p>Fillus provides a clear, consolidated view and smart reminders to reduce stress, wasted trips, and medication gaps.</p>
+      </section>
+
+      <section>
+        <h2>The Problem</h2>
+        <ul>
+          <li>Patients with multiple prescriptions often face staggered refill dates.</li>
+          <li>ADHD, chronic illness, and busy lifestyles make it easy to forget refills.</li>
+          <li>Pharmacies don’t always align medication schedules automatically, leading to extra visits and frustration.</li>
+          <li>Missed or late refills can result in health risks and costly lapses in treatment.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>The Goal</h2>
+        <p>Design an app that:</p>
+        <ul>
+          <li>Consolidates refill information in one place.</li>
+          <li>Reminds users at the right time without overwhelming them.</li>
+          <li>Suggests syncing options to reduce trips to the pharmacy.</li>
+          <li>Makes it easier to communicate with pharmacies and doctors about refill alignment.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Research & Insights</h2>
+        <p>I interviewed patients with ADHD, caregivers, and those with multiple prescriptions. Key findings:</p>
+        <ul>
+          <li><strong>Forgetfulness</strong>: People often realized they were out of medication the same day they needed it.</li>
+          <li><strong>Overwhelming reminders</strong>: Users disliked generic alarms—they wanted context-specific, actionable nudges.</li>
+          <li><strong>Pharmacy friction</strong>: Some pharmacies allow early refills, but users didn’t know how to request or plan around this.</li>
+          <li><strong>Peace of mind</strong>: The biggest desire was less stress and more confidence about staying on schedule.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>The Solution</h2>
+        <p>Fillus offers:</p>
+        <ul>
+          <li><strong>Smart Syncing:</strong> Automatically calculates the best refill alignment schedule.</li>
+          <li><strong>Unified Dashboard:</strong> Shows all prescriptions with refill countdowns.</li>
+          <li><strong>Adaptive Reminders:</strong> Context-aware notifications (e.g., “Your Adderall is ready for refill. Would you like to pick it up with your blood pressure meds in 2 days?”).</li>
+          <li><strong>Pharmacy Coordination:</strong> Guidance on requesting early refills and syncing schedules.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Design Process</h2>
+        <ul>
+          <li><strong>User Flows:</strong> mapped out refill request, pickup, and sync scenarios.</li>
+          <li><strong>Wireframes:</strong> explored calendar vs. card-based tracking.</li>
+          <li><strong>Testing:</strong> Conducted sessions with target users to refine features, focusing on ease of use and clarity.</li>
+          <li><strong>Iterations:</strong> reduced clutter and made notifications more human-like.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Key Features</h2>
+        <ul>
+          <li><strong>Refill Timeline:</strong> clear overview of when each med runs out.</li>
+          <li><strong>Smart Notifications:</strong> gentle, adaptive nudges tailored to user preference.</li>
+          <li><strong>Sync Suggestions:</strong> refill alignment to reduce pharmacy visits.</li>
+          <li><strong>Caregiver Mode:</strong> option to track for family members.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Next Steps</h2>
+        <p>Future improvements could include:</p>
+        <ul>
+          <li>Integrating with pharmacy APIs for real-time refill status.</li>
+          <li>Adding telehealth features to request prescription renewals.</li>
+          <li>Expanding caregiver functionalities for shared management.</li>
+          <li>Exploring AI-driven health insights based on medication adherence.</li>
+        </ul>
+      </section>
+
+    </div>
   </main>
 
   <footer>
