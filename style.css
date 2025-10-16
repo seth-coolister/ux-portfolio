@@ -210,6 +210,20 @@ footer {
 #ejw-main{
   background-color: #1e1e1e;
 }
+#ejw-main h1 {
+  color: #8e4a49;
+  font-family:'IM Fell English', serif;
+  font-size: 36px;
+}
+#ejw-main h2{
+  color: #8e4a49;
+  font-family:'Montserrat', sans-serif;
+  font-size: 24px;
+}
+#ejw-main p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
 #ejw-wrapper{
   display: flex;
   flex-direction: column;
