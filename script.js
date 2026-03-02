@@ -67,3 +67,16 @@ document.getElementById('menu').addEventListener('click', function() {
 
     document.body.appendChild(popup);
 });
+
+document.getElementById('work-btn').addEventListener('click', function() {
+  document.getElementById('card-container').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('contact-btn').addEventListener('click', function() {
+  document.getElementById('footer-wrapper').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('nav a[href="#card-container"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('card-container').scrollIntoView({ behavior: 'smooth' });
+});

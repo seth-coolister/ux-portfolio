@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seth Callister, UX Designer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +16,13 @@
     <div id="head-wrapper">
       <div id="workmark">
         <a href="index.html"><img src="assets/logo.svg" alt="Seth Callister Logo" class="logo"></a>
-        <h1>Seth Callister<br>UX/UI Designer</h1>
+        <p>Seth Callister<br>UX/UI Designer</p>
       </div>
       
       <nav>
         <ul>
           <li><a href="index.html" id="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="#card-container">Work</a></li>
           <li><a href="assets/scallister-resume.pdf" target="_blank">Resume</a></li>
           <li><a href="https://www.linkedin.com/in/seth-callister/"><img src="assets/linkedin.svg" alt="LinkedIn"></a></li>
         </ul>
@@ -30,8 +32,43 @@
   </header>
 
   <main id="home-main">
-    <h2>Seth Callister</h2>
-    <p>Hi, I'm Seth. I'm a UX Designer with a background in psychology. I love learning about human behavior and how it impacts design. I strive to create intuitive, user-centered experiences that make a positive impact on people's lives. My approach blends empathy and research with practical design systems to turn complex ideas into simple, meaningful interactions.</p>
+    <div class="intro">
+      <img src="assets/seth.webp" alt="Seth Callister" id="seth-img">
+      <div id="intro-text-wrapper">
+        <h1>Seth Callister</h1>
+        <p>Hi, I'm Seth! I'm a UX Designer with a passion for learning human behavior and how it impacts design. My goal is to create intuitive, user-centered experiences that make a positive impact on people's lives. My approach blends ppathy and research with practical design systps to turn complex ideas into simple, meaningful interactions.</p>
+        <div id="overview">
+          <h2>Overview</h2>
+          <div id="overview-row">
+            <div class="overview-column">
+              <h3>Experience</h3>
+              <p><small>2025</small> UX/UI Designer at Utah Valley University</p>
+              <p><small>2023 - Current</small> Freelance UX/UI and Web Design</p>
+            </div>
+            <div class="overview-column">
+              <h3>Education</h3>
+              <p><small>2025</small> B.S. Web Design and Development</p>
+              <p><small>2021</small> B.S. Psychology</p>
+            </div>
+            <div class="overview-column">
+              <h3>Tools</h3>
+              <p><small>4 years</small> Figma</p>
+              <p><small>3 years</small> Adobe Creative Suite</p>
+              <p><small>1 year</small> WordPress</p>
+            </div>
+          </div>
+        </div>
+        <div id="buttons">
+          <button id="work-btn">View Work</button>
+          <button id="contact-btn">Contact</button>
+        </div>
+      </div>
+    </div>
+    <div id="divider">
+      <div class="line"></div>
+      <h3>My Work</h3>
+      <div class="line"></div>
+    </div>
     <section id="card-container">
       <a href="tangere.html" class="card"><img src="assets/tangere-gold.svg" alt="Tangere Logo">Tangere</a>
       <a href="fillus.html" class="card"><img src="assets/fillus.svg" alt="FillUs Logo">FillUs</a>
@@ -40,7 +77,17 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Seth Callister</p>
+    <div id="footer-wrapper">
+      <div id="footer-content">
+        <a href="index.html"><img src="assets/logo.svg" alt="Seth Callister Logo" class="logo"></a>
+        <p>&copy; Seth Callister, 2026</p>
+      </div>
+      <div id="footer-contact">
+          <p><a href="tel:+8019952517">Mobile &bull; (801) 995-2517</a></p>
+          <p><a href="mailto:seth.callister3@gmail.com">Email &bull; seth.callister3@gmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/seth-callister/">LinkedIn &bull; https://www.linkedin.com/in/seth-callister/</a>
+      </div>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
