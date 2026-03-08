@@ -1,12 +1,6 @@
 document.getElementById('menu').addEventListener('click', function() {
     // Check if popup already exists
-    const existingPopup = document.getElementById('menu-popup');
-    
-    // If popup exists, remove it and exit
-    if (existingPopup) {
-        existingPopup.remove();
-        return;
-    }
+    if (document.getElementById('menu-popup')) return;
 
     // Create popup container
     const popup = document.createElement('div');
@@ -94,13 +88,15 @@ function scrollToSection(id) {
     observer.observe(el);
 }
 
-function handleNavClick(element) {
-    document.getElementById(element).addEventListener('click', () => {
-        scrollToSection(element);
-    });
-}
+document.getElementById('work-btn').addEventListener('click', function () {
+    scrollToSection('card-container');
+});
 
-document.querySelector('nav a[href="#card-container"]').addEventListener('click', (e) => {
+document.getElementById('contact-btn').addEventListener('click', function () {
+    scrollToSection('footer-wrapper');
+});
+
+document.querySelector('nav a[href="#card-container"]').addEventListener('click', function (e) {
     e.preventDefault();
     scrollToSection('card-container');
 });
