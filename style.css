@@ -83,11 +83,10 @@ ul {
 }
 
 .intro{
-  padding: 40px 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 #seth-img{
   max-width: 400px;
@@ -243,7 +242,7 @@ footer {
   margin: 20px 0;
 }
 #footer-contact p{
-  padding: 5px;
+  padding: 2px;
 }
 #footer-contact a{
     color: #fff; 
@@ -258,6 +257,8 @@ footer {
   }
   .intro{
     flex-direction: row;
+    margin-top: 40px;
+    gap: 40px;
   }
   #card-container {
     flex-direction: row;
