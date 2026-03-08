@@ -1,6 +1,12 @@
 document.getElementById('menu').addEventListener('click', function() {
     // Check if popup already exists
-    if (document.getElementById('menu-popup')) return;
+    const existingPopup = document.getElementById('menu-popup');
+    
+    // If popup exists, remove it and exit
+    if (existingPopup) {
+        existingPopup.remove();
+        return;
+    }
 
     // Create popup container
     const popup = document.createElement('div');
@@ -68,15 +74,33 @@ document.getElementById('menu').addEventListener('click', function() {
     document.body.appendChild(popup);
 });
 
-document.getElementById('work-btn').addEventListener('click', function() {
-  document.getElementById('card-container').scrollIntoView({ behavior: 'smooth' });
-});
+// scroll the element into view and briefly apply a “highlight” class
+function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
 
-document.getElementById('contact-btn').addEventListener('click', function() {
-  document.getElementById('footer-wrapper').scrollIntoView({ behavior: 'smooth' });
-});
+    el.scrollIntoView({ behavior: 'smooth' });
 
-document.querySelector('nav a[href="#card-container"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  document.getElementById('card-container').scrollIntoView({ behavior: 'smooth' });
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('highlight');
+                setTimeout(() => entry.target.classList.remove('highlight'), 800);
+                obs.disconnect();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(el);
+}
+
+function handleNavClick(element) {
+    document.getElementById(element).addEventListener('click', () => {
+        scrollToSection(element);
+    });
+}
+
+document.querySelector('nav a[href="#card-container"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    scrollToSection('card-container');
 });
