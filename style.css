@@ -121,6 +121,7 @@ ul {
 }
 #overview-row{
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .overview-column{
@@ -281,6 +282,9 @@ footer {
   }
   nav ul li a:hover{
     color: #6FA9D6;
+  }
+  #overview-row{
+  flex-direction: row;
   }
   #buttons{ 
   justify-content: start;
@@ -474,8 +478,13 @@ footer {
   margin: 0 auto;
 }
 
-/* ABOUT */
-#about-main{
-  max-width: 1200px;
-  margin: 0 auto;
+/* HIGHLIGHT ANIMATION */
+.highlight {
+    animation: fadeHighlight .8s ease-out forwards;
+    border-radius: 4px;
+}
+
+@keyframes fadeHighlight {
+    from { background-color: #6FA9D6 }    /* change colour as desired */
+    to   { background-color: transparent; }
 }
