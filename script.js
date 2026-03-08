@@ -97,7 +97,7 @@ function scrollToSection(id) {
 function handleNavClick(element) {
     document.getElementById(element).addEventListener('click', () => {
         scrollToSection(element);
-});
+    });
 }
 
 document.querySelector('nav a[href="#card-container"]').addEventListener('click', (e) => {
